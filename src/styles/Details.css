@@ -1,0 +1,136 @@
+.main-bg {
+  padding-top: 80px;
+}
+.name-span,
+.home-link,
+.category-link {
+  font-size: 14px;
+  transition: all ease 0.3s;
+}
+.home-link,
+.category-link {
+  opacity: 0.9;
+}
+.home-link:hover,
+.category-link:hover {
+  color: rgb(211 23 5) !important;
+}
+.home-link::after,
+.category-link::after {
+  content: "";
+  position: absolute;
+  top: 54%;
+  margin-left: 12px;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: grey;
+}
+.backdrop-img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.start-details {
+  font-size: 60px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease 0.1s;
+  cursor: pointer;
+}
+.start-details:hover {
+  font-size: 75px;
+}
+.auto-details {
+  background-color: #222222;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  height: 50px;
+  align-items: center;
+  font-size: 14px;
+  gap: 10px;
+}
+.input-flex {
+  transition: all ease 0.2s;
+  border-radius: 5px;
+  padding: 2px;
+  opacity: 0.5;
+}
+.input-flex:hover {
+  background-color: rgba(0, 0, 0, 0.815);
+  opacity: 0.8;
+}
+.input-details {
+  cursor: pointer;
+}
+.details-text {
+  border-bottom: 1px solid rgba(245, 245, 220, 0.411);
+}
+.overview-p::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  opacity: 0.75;
+  height: 100%;
+  width: 1px;
+  margin-left: -10px;
+}
+.overview-p,
+.genres {
+  color: #d5d5d5;
+}
+.rate-details {
+  top: 0;
+}
+.span-details {
+  font-size: 13px;
+}
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .tagline-details {
+    font-size: 13px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .img-details {
+    width: 50%;
+  }
+  #search {
+    width: 80% !important;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (max-width: 992px) {
+  .img-details {
+    width: 60%;
+  }
+}
+@media (max-width: 1100px) {
+  .row-details {
+    text-align: center;
+  }
+  .details-text {
+    padding-top: 30px;
+  }
+  .genres {
+    justify-content: center;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

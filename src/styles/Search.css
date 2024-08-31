@@ -1,0 +1,23 @@
+.mediaType {
+  bottom: 10px;
+  font-size: 13px;
+  left: -70%;
+  opacity: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: all 0.4s ease;
+}
+.mediaType span {
+  background-color: hsla(0, 0%, 87%, 0.7);
+}
+.poster {
+  min-height: 70%;
+}
+.poster img {
+  transition: all 0.4s ease;
+}
+.search-hover:hover .mediaType {
+  opacity: 1;
+  left: 0;
+}
