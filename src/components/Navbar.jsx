@@ -35,7 +35,7 @@ export const Navbar = () => {
     <nav
       className={`navbar ${
         navState ? "navbar-show" : "navbar-not-shown"
-      } navbar-expand-lg navbar-dark z-2 p-3 ps-5 pe-5 sticky-top top-0 `}
+      } navbar-expand-lg navbar-dark z-2 p-3 ps-2 pe-2 ps-lg-5 pe-lg-5 sticky-top top-0 `}
     >
       <div className='container-fluid'>
         <Link to={"/"}>

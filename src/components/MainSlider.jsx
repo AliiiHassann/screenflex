@@ -35,29 +35,37 @@ export const MainSlider = () => {
         <Slider {...settings}>
           {moviesList.map((movie, i) => {
             return (
-              <div key={i} className='w-100 h-100'>
-                <div className='w-100 h-100'>
-                  <img
-                    className='main-slider-photo'
-                    src={`https://image.tmdb.org/t/p/w1280${movie.backdrop_path}`}
-                    alt='No'
-                  />
-                </div>
-                <div className='position-absolute layer d-flex align-items-start justify-content-center flex-column top-0 start-0 w-100 h-100'>
-                  <div className='container poppins-bold'>
-                    <h1 className='intro-main'>
-                      Welcome To
-                      <img
-                        src={logo}
-                        alt='No'
-                        className='ms-3 main-logo-img overflow-hidden'
-                        width={325}
-                      />
-                    </h1>
-                    <h2 className=' h4 ps-0 text-white-50'>
-                      Millions of movies, TV shows and people to discover.
-                      Explore now.
-                    </h2>
+              <div
+                key={i}
+                className='position-absolute top-0 start-0 w-100 h-100 text-decoration-none slider p-0 w-100 h-100'
+              >
+                <div
+                  style={{
+                    background: `url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})`,
+                    width: "100%",
+                    height: "100%",
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                    position: "relative",
+                  }}
+                >
+                  <div className='position-absolute layer d-flex align-items-start justify-content-center flex-column top-0 start-0 w-100 h-100'>
+                    <div className='container poppins-bold'>
+                      <h1 className='intro-main mb-3'>
+                        Welcome <span className='ms-3'> To </span>
+                        <img
+                          src={logo}
+                          alt='No'
+                          className='ms-3 main-logo-img overflow-hidden'
+                          width={325}
+                        />
+                      </h1>
+                      <h4 className=' ps-0 text-white-50 intro-h4'>
+                        Millions of movies, TV shows and people to discover.
+                        Explore now.
+                      </h4>
+                    </div>
                   </div>
                 </div>
               </div>
